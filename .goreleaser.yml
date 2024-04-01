@@ -1,0 +1,6 @@
+builds:
+  - id: "lsgo"
+    binary: lsgo
+    goos:
+      - "darwin"
+      - "linux"
