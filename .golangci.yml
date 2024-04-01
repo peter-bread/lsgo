@@ -1,0 +1,19 @@
+linters:
+  enable-all: false
+  disable-all: true
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - gofumpt
+    - exhaustive
+    - goimports
+    - stylecheck
+  fast: false
+
+linters-settings:
+  staticcheck:
+    go: "1.22"
