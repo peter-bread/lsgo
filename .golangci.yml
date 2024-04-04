@@ -13,7 +13,5 @@ linters:
     - goimports
     - stylecheck
   fast: false
-
-linters-settings:
-  staticcheck:
-    go: "1.22"
+run:
+  go: "1.22"
