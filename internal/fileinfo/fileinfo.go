@@ -39,7 +39,10 @@ func getInfo(filepath string) (entry string) {
 		hardlinks = int(stat.Nlink)
 	}
 
-	entry = fmt.Sprintf("%s %d %s  %s  %d %s %s\n", mode, hardlinks, owner.Username, group.Name, size, modTime, name)
+	entry = fmt.Sprintf("%-11s %2d %10s %6s %4s %12s %s\n",
+		mode, hardlinks, owner.Username, group.Name, fmt.Sprintf("%8d", size), modTime, name)
+
+	// entry = fmt.Sprintf("%s %d %s  %s  %d %s %s\n", mode, hardlinks, owner.Username, group.Name, size, modTime, name)
 	return
 }
 
